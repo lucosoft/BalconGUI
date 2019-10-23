@@ -1,0 +1,16 @@
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\bin\Debug\Modbus Poll CS.exe
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\bin\Debug\Modbus Poll CS.pdb
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.csprojResolveAssemblyReference.cache
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Form1.resources
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Properties.Resources.resources
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.csproj.GenerateResource.Cache
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.exe
+G:\Proyectos\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.pdb
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\bin\Debug\Modbus Poll CS.exe
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\bin\Debug\Modbus Poll CS.pdb
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.csprojAssemblyReference.cache
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Form1.resources
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Properties.Resources.resources
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.csproj.GenerateResource.cache
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.exe
+D:\BalconDocs\Modbus\Software PC\Modbus Poll CS\Modbus Poll CS\obj\Debug\Modbus Poll CS.pdb

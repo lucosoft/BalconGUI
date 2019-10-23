@@ -1,0 +1,7 @@
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\bin\Release\Modbus Poll CS.exe
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\bin\Release\Modbus Poll CS.pdb
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Release\Modbus_Poll_CS.Form1.resources
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Release\Modbus_Poll_CS.Properties.Resources.resources
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Release\BalconGUI.csproj.GenerateResource.cache
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Release\Modbus Poll CS.exe
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Release\Modbus Poll CS.pdb

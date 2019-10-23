@@ -1,0 +1,16 @@
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\bin\Debug\Modbus Poll CS.exe
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\bin\Debug\Modbus Poll CS.pdb
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Debug\BalconGUI.csprojAssemblyReference.cache
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Form1.resources
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Properties.Resources.resources
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Debug\BalconGUI.csproj.GenerateResource.cache
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Debug\Modbus Poll CS.exe
+D:\BalconDocs\Modbus\Software PC\BalconGUI\Modbus Poll CS\obj\Debug\Modbus Poll CS.pdb
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\bin\Debug\Modbus Poll CS.exe
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\bin\Debug\Modbus Poll CS.pdb
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\BalconGUI.csprojAssemblyReference.cache
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Form1.resources
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Properties.Resources.resources
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\BalconGUI.csproj.GenerateResource.cache
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\Modbus Poll CS.exe
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\Modbus Poll CS.pdb
