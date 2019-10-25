@@ -1,0 +1,14 @@
+D:\BalconWorkspace\BalconGUI\Queue\bin\Debug\Queue.exe.config
+D:\BalconWorkspace\BalconGUI\Queue\bin\Debug\Queue.exe
+D:\BalconWorkspace\BalconGUI\Queue\bin\Debug\Queue.pdb
+D:\BalconWorkspace\BalconGUI\Queue\bin\Debug\Apache.NMS.ActiveMQ.dll
+D:\BalconWorkspace\BalconGUI\Queue\bin\Debug\Apache.NMS.dll
+D:\BalconWorkspace\BalconGUI\Queue\bin\Debug\BusinessObject.dll
+D:\BalconWorkspace\BalconGUI\Queue\bin\Debug\BusinessObject.pdb
+D:\BalconWorkspace\BalconGUI\Queue\obj\Debug\Queue.csprojAssemblyReference.cache
+D:\BalconWorkspace\BalconGUI\Queue\obj\Debug\Queue.Form1.resources
+D:\BalconWorkspace\BalconGUI\Queue\obj\Debug\Queue.Properties.Resources.resources
+D:\BalconWorkspace\BalconGUI\Queue\obj\Debug\Queue.csproj.GenerateResource.cache
+D:\BalconWorkspace\BalconGUI\Queue\obj\Debug\Queue.csproj.CopyComplete
+D:\BalconWorkspace\BalconGUI\Queue\obj\Debug\Queue.exe
+D:\BalconWorkspace\BalconGUI\Queue\obj\Debug\Queue.pdb

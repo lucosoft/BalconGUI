@@ -14,3 +14,9 @@ D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\Modbus_Poll_CS.Properties.
 D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\BalconGUI.csproj.GenerateResource.cache
 D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\Modbus Poll CS.exe
 D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\Modbus Poll CS.pdb
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\bin\Debug\Modbus Poll CS.exe.config
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\bin\Debug\Apache.NMS.ActiveMQ.dll
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\bin\Debug\Apache.NMS.dll
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\obj\Debug\BalconGUI.csproj.CopyComplete
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\bin\Debug\BusinessObject.dll
+D:\BalconWorkspace\BalconGUI\Modbus Poll CS\bin\Debug\BusinessObject.pdb

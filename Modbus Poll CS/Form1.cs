@@ -8,6 +8,11 @@ using System.Windows.Forms;
 using System.Timers;
 using System.IO.Ports;
 
+using Apache.NMS;
+using Apache.NMS.Util;
+
+using BusinessObject;
+
 namespace Modbus_Poll_CS
 {
     public partial class Form1 : Form
@@ -106,11 +111,11 @@ namespace Modbus_Poll_CS
             }
 
             //lstDataType.SelectedIndex = 0;
-            lstDataType.SelectedIndex = 1;
+            lstDataType.SelectedIndex = 0;
 
             //Textbox defaults:
             //            txtRegisterQty.Text = "20";
-            txtRegisterQty.Text = "4";
+            txtRegisterQty.Text = "10";
             txtSampleRate.Text = "1000";
             txtSlaveID.Text = "1";
             txtStartAddr.Text = "0";
@@ -198,6 +203,7 @@ namespace Modbus_Poll_CS
             }
 
             string itemString;
+            string[] itemStringAux = new string[pollLength];
 
             switch (dataType)
             {
@@ -206,8 +212,21 @@ namespace Modbus_Poll_CS
                     {
                         itemString = "[" + Convert.ToString(pollStart + i + 40001) + "] , MB[" +
                             Convert.ToString(pollStart + i) + "] = " + values[i].ToString();
+                        itemStringAux[i] = values[i].ToString();
                         DoGUIUpdate(itemString);
                     }
+                    CheckForIllegalCrossThreadCalls = false;
+                    MQ_Text1.Text = itemStringAux[0];
+                    MQ_Text2.Text = itemStringAux[1];
+                    MQ_Text3.Text = itemStringAux[2];
+                    MQ_Text4.Text = itemStringAux[3];
+                    MQ_Text5.Text = itemStringAux[4];
+                    MQ_Text6.Text = itemStringAux[5];
+                    MQ_Text7.Text = itemStringAux[6];
+                    MQ_Text8.Text = itemStringAux[7];
+                    MQ_Text9.Text = itemStringAux[8];
+                    MQ_Text10.Text = itemStringAux[9];
+
                     break;
                 case "Hexadecimal":
                     for (int i = 0; i < pollLength; i++)
@@ -298,6 +317,62 @@ namespace Modbus_Poll_CS
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            IObjectMessage objMessage;
+
+            OperatorRequestObject operatorRequestObject = new OperatorRequestObject();
+            operatorRequestObject.Shortcode1 = MQ_Text1.Text.ToString();
+            operatorRequestObject.Shortcode2 = MQ_Text2.Text.ToString();
+            operatorRequestObject.Shortcode3 = MQ_Text3.Text.ToString();
+            operatorRequestObject.Shortcode4 = MQ_Text4.Text.ToString();
+            operatorRequestObject.Shortcode5 = MQ_Text5.Text.ToString();
+            operatorRequestObject.Shortcode6 = MQ_Text6.Text.ToString();
+            operatorRequestObject.Shortcode7 = MQ_Text7.Text.ToString();
+            operatorRequestObject.Shortcode8 = MQ_Text8.Text.ToString();
+            operatorRequestObject.Shortcode9 = MQ_Text9.Text.ToString();
+            operatorRequestObject.Shortcode10 = MQ_Text10.Text.ToString();
+
+            IConnectionFactory factory = new NMSConnectionFactory("tcp://localhost:61616");
+            IConnection connection = factory.CreateConnection();
+            connection = factory.CreateConnection();
+            connection.Start();
+            ISession session = connection.CreateSession(AcknowledgementMode.AutoAcknowledge);
+            IDestination QueueDestination = SessionUtil.GetDestination(session, "ExampleQueue ");
+            IMessageProducer MessageProducer = session.CreateProducer(QueueDestination);
+            //object OperatorRequestObject = null;
+            //string shortcode = "puto el que lee";
+            objMessage = session.CreateObjectMessage(operatorRequestObject);
+            
+            MessageProducer.Send(objMessage);
+            session.Close();
+            connection.Stop();
+            
+
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstRegisterValues_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

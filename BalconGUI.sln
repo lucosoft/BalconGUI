@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalconGUI", "Modbus Poll CS\BalconGUI.csproj", "{74E6ABE3-8798-4C63-9E5A-A7C0C2002E9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "Queue\Queue.csproj", "{32CEB6AF-08E3-471E-9BE7-815FD38956CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObject", "BusinessObject\BusinessObject.csproj", "{7444098E-51CA-46BD-BEF9-CFD77B9B3316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{74E6ABE3-8798-4C63-9E5A-A7C0C2002E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E6ABE3-8798-4C63-9E5A-A7C0C2002E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E6ABE3-8798-4C63-9E5A-A7C0C2002E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32CEB6AF-08E3-471E-9BE7-815FD38956CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CEB6AF-08E3-471E-9BE7-815FD38956CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CEB6AF-08E3-471E-9BE7-815FD38956CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CEB6AF-08E3-471E-9BE7-815FD38956CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7444098E-51CA-46BD-BEF9-CFD77B9B3316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7444098E-51CA-46BD-BEF9-CFD77B9B3316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7444098E-51CA-46BD-BEF9-CFD77B9B3316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7444098E-51CA-46BD-BEF9-CFD77B9B3316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

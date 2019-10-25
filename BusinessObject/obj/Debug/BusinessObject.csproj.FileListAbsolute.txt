@@ -1,0 +1,5 @@
+D:\BalconWorkspace\BalconGUI\BusinessObject\bin\Debug\BusinessObject.dll
+D:\BalconWorkspace\BalconGUI\BusinessObject\bin\Debug\BusinessObject.pdb
+D:\BalconWorkspace\BalconGUI\BusinessObject\obj\Debug\BusinessObject.csprojAssemblyReference.cache
+D:\BalconWorkspace\BalconGUI\BusinessObject\obj\Debug\BusinessObject.dll
+D:\BalconWorkspace\BalconGUI\BusinessObject\obj\Debug\BusinessObject.pdb

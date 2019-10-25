@@ -55,10 +55,24 @@ namespace Modbus_Poll_CS
             this.txtWriteRegister = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.MQ_Text1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.MQ_Text2 = new System.Windows.Forms.TextBox();
+            this.MQ_Text3 = new System.Windows.Forms.TextBox();
+            this.MQ_Text6 = new System.Windows.Forms.TextBox();
+            this.MQ_Text5 = new System.Windows.Forms.TextBox();
+            this.MQ_Text4 = new System.Windows.Forms.TextBox();
+            this.MQ_Text7 = new System.Windows.Forms.TextBox();
+            this.MQ_Text8 = new System.Windows.Forms.TextBox();
+            this.MQ_Text9 = new System.Windows.Forms.TextBox();
+            this.MQ_Text10 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -216,6 +230,7 @@ namespace Modbus_Poll_CS
             this.lstRegisterValues.Name = "lstRegisterValues";
             this.lstRegisterValues.Size = new System.Drawing.Size(256, 264);
             this.lstRegisterValues.TabIndex = 2;
+            this.lstRegisterValues.SelectedIndexChanged += new System.EventHandler(this.lstRegisterValues_SelectedIndexChanged);
             // 
             // btnStart
             // 
@@ -241,7 +256,7 @@ namespace Modbus_Poll_CS
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblStatus});
-            this.statusStrip.Location = new System.Drawing.Point(0, 348);
+            this.statusStrip.Location = new System.Drawing.Point(0, 415);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(526, 22);
             this.statusStrip.TabIndex = 5;
@@ -309,11 +324,123 @@ namespace Modbus_Poll_CS
             this.label8.TabIndex = 3;
             this.label8.Text = "Register:";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.MQ_Text10);
+            this.groupBox4.Controls.Add(this.MQ_Text9);
+            this.groupBox4.Controls.Add(this.MQ_Text8);
+            this.groupBox4.Controls.Add(this.MQ_Text7);
+            this.groupBox4.Controls.Add(this.MQ_Text6);
+            this.groupBox4.Controls.Add(this.MQ_Text5);
+            this.groupBox4.Controls.Add(this.MQ_Text4);
+            this.groupBox4.Controls.Add(this.MQ_Text3);
+            this.groupBox4.Controls.Add(this.MQ_Text2);
+            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.MQ_Text1);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Location = new System.Drawing.Point(12, 344);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(452, 68);
+            this.groupBox4.TabIndex = 9;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "ActiveMQ";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(359, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Queue";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // MQ_Text1
+            // 
+            this.MQ_Text1.Location = new System.Drawing.Point(68, 13);
+            this.MQ_Text1.Name = "MQ_Text1";
+            this.MQ_Text1.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text1.TabIndex = 6;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 16);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 13);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Values:";
+            // 
+            // MQ_Text2
+            // 
+            this.MQ_Text2.Location = new System.Drawing.Point(114, 13);
+            this.MQ_Text2.Name = "MQ_Text2";
+            this.MQ_Text2.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text2.TabIndex = 9;
+            // 
+            // MQ_Text3
+            // 
+            this.MQ_Text3.Location = new System.Drawing.Point(160, 13);
+            this.MQ_Text3.Name = "MQ_Text3";
+            this.MQ_Text3.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text3.TabIndex = 10;
+            // 
+            // MQ_Text6
+            // 
+            this.MQ_Text6.Location = new System.Drawing.Point(68, 39);
+            this.MQ_Text6.Name = "MQ_Text6";
+            this.MQ_Text6.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text6.TabIndex = 14;
+            // 
+            // MQ_Text5
+            // 
+            this.MQ_Text5.Location = new System.Drawing.Point(252, 13);
+            this.MQ_Text5.Name = "MQ_Text5";
+            this.MQ_Text5.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text5.TabIndex = 13;
+            // 
+            // MQ_Text4
+            // 
+            this.MQ_Text4.Location = new System.Drawing.Point(206, 13);
+            this.MQ_Text4.Name = "MQ_Text4";
+            this.MQ_Text4.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text4.TabIndex = 12;
+            // 
+            // MQ_Text7
+            // 
+            this.MQ_Text7.Location = new System.Drawing.Point(114, 39);
+            this.MQ_Text7.Name = "MQ_Text7";
+            this.MQ_Text7.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text7.TabIndex = 15;
+            // 
+            // MQ_Text8
+            // 
+            this.MQ_Text8.Location = new System.Drawing.Point(160, 39);
+            this.MQ_Text8.Name = "MQ_Text8";
+            this.MQ_Text8.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text8.TabIndex = 16;
+            // 
+            // MQ_Text9
+            // 
+            this.MQ_Text9.Location = new System.Drawing.Point(206, 39);
+            this.MQ_Text9.Name = "MQ_Text9";
+            this.MQ_Text9.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text9.TabIndex = 17;
+            // 
+            // MQ_Text10
+            // 
+            this.MQ_Text10.Location = new System.Drawing.Point(252, 39);
+            this.MQ_Text10.Name = "MQ_Text10";
+            this.MQ_Text10.Size = new System.Drawing.Size(40, 20);
+            this.MQ_Text10.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 370);
+            this.ClientSize = new System.Drawing.Size(526, 437);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.btnStop);
@@ -332,6 +459,8 @@ namespace Modbus_Poll_CS
             this.statusStrip.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,6 +495,19 @@ namespace Modbus_Poll_CS
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnWrite;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox MQ_Text1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox MQ_Text3;
+        private System.Windows.Forms.TextBox MQ_Text2;
+        private System.Windows.Forms.TextBox MQ_Text6;
+        private System.Windows.Forms.TextBox MQ_Text5;
+        private System.Windows.Forms.TextBox MQ_Text4;
+        private System.Windows.Forms.TextBox MQ_Text10;
+        private System.Windows.Forms.TextBox MQ_Text9;
+        private System.Windows.Forms.TextBox MQ_Text8;
+        private System.Windows.Forms.TextBox MQ_Text7;
     }
 }
 
