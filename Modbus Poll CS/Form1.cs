@@ -356,10 +356,21 @@ namespace Modbus_Poll_CS
             IDestination QueueDestination = SessionUtil.GetDestination(session, "ExampleQueue ");
             IMessageProducer MessageProducer = session.CreateProducer(QueueDestination);
             //object OperatorRequestObject = null;
-            //string shortcode = "puto el que lee";
+            string shortcode = MQ_Text1.Text.ToString()
+                + ", " + MQ_Text2.Text.ToString()
+                + ", " + MQ_Text3.Text.ToString()
+                + ", " + MQ_Text4.Text.ToString()
+                + ", " + MQ_Text5.Text.ToString()
+                + ", " + MQ_Text6.Text.ToString()
+                + ", " + MQ_Text7.Text.ToString()
+                + ", " + MQ_Text8.Text.ToString()
+                + ", " + MQ_Text9.Text.ToString()
+                + ", " + MQ_Text10.Text.ToString()
+                ;
             objMessage = session.CreateObjectMessage(operatorRequestObject);
-            
-            MessageProducer.Send(objMessage);
+
+            //MessageProducer.Send(objMessage);
+            MessageProducer.Send(shortcode);
             session.Close();
             connection.Stop();
             
