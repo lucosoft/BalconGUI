@@ -227,6 +227,11 @@ namespace Modbus_Poll_CS
                     MQ_Text9.Text = itemStringAux[8];
                     MQ_Text10.Text = itemStringAux[9];
 
+                    if (checkBoxAutoManual.Checked)
+                    {
+                        queue();
+                    }
+
                     break;
                 case "Hexadecimal":
                     for (int i = 0; i < pollLength; i++)
@@ -333,8 +338,8 @@ namespace Modbus_Poll_CS
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
-            IObjectMessage objMessage;
+            queue();
+/*            IObjectMessage objMessage;
 
             OperatorRequestObject operatorRequestObject = new OperatorRequestObject();
             operatorRequestObject.Shortcode1 = MQ_Text1.Text.ToString();
@@ -374,8 +379,51 @@ namespace Modbus_Poll_CS
             session.Close();
             connection.Stop();
             
+*/
 
+        }
 
+        private void queue()
+        {
+            IObjectMessage objMessage;
+
+            OperatorRequestObject operatorRequestObject = new OperatorRequestObject();
+            operatorRequestObject.Shortcode1 = MQ_Text1.Text.ToString();
+            operatorRequestObject.Shortcode2 = MQ_Text2.Text.ToString();
+            operatorRequestObject.Shortcode3 = MQ_Text3.Text.ToString();
+            operatorRequestObject.Shortcode4 = MQ_Text4.Text.ToString();
+            operatorRequestObject.Shortcode5 = MQ_Text5.Text.ToString();
+            operatorRequestObject.Shortcode6 = MQ_Text6.Text.ToString();
+            operatorRequestObject.Shortcode7 = MQ_Text7.Text.ToString();
+            operatorRequestObject.Shortcode8 = MQ_Text8.Text.ToString();
+            operatorRequestObject.Shortcode9 = MQ_Text9.Text.ToString();
+            operatorRequestObject.Shortcode10 = MQ_Text10.Text.ToString();
+
+            IConnectionFactory factory = new NMSConnectionFactory("tcp://localhost:61616");
+            IConnection connection = factory.CreateConnection();
+            connection = factory.CreateConnection();
+            connection.Start();
+            ISession session = connection.CreateSession(AcknowledgementMode.AutoAcknowledge);
+            IDestination QueueDestination = SessionUtil.GetDestination(session, "ExampleQueue ");
+            IMessageProducer MessageProducer = session.CreateProducer(QueueDestination);
+            //object OperatorRequestObject = null;
+            string shortcode = MQ_Text1.Text.ToString()
+                + ", " + MQ_Text2.Text.ToString()
+                + ", " + MQ_Text3.Text.ToString()
+                + ", " + MQ_Text4.Text.ToString()
+                + ", " + MQ_Text5.Text.ToString()
+                + ", " + MQ_Text6.Text.ToString()
+                + ", " + MQ_Text7.Text.ToString()
+                + ", " + MQ_Text8.Text.ToString()
+                + ", " + MQ_Text9.Text.ToString()
+                + ", " + MQ_Text10.Text.ToString()
+                ;
+            objMessage = session.CreateObjectMessage(operatorRequestObject);
+
+            //MessageProducer.Send(objMessage);
+            MessageProducer.Send(shortcode);
+            session.Close();
+            connection.Stop();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -385,6 +433,24 @@ namespace Modbus_Poll_CS
 
         private void lstRegisterValues_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxAutoManual_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxAutoManual.Checked)
+            {
+                buttonQueue.Enabled = false;
+            }
+            else
+            {
+                buttonQueue.Enabled = true;
+            }
 
         }
     }
